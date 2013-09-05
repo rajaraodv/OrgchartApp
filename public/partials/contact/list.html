@@ -1,0 +1,16 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand" href="#">Org Chart</a>
+            <div ng-controller="OrgChartCtrl">
+                <form class="navbar-form" ng-submit='searchEmail()'>
+                    <input type="text" class="input-medium search-query" ng-model='email' placeholder='Enter Email'> <button type="submit" class="btn">Search</button>
+                </form>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<!-- map -->
+<div style='height:100%'>
+    <div id="map" style='height:100%'></div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" type="text/css"><!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+        <![endif]-->
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+body {
+                padding: 0;
+                margin: 0;
+            }
+
+            html, body, #map {
+                height: 100%;
+            }
+        </style>
+        <title></title>
+    </head>
+    <body ng-app="AngularSFDemo">
+        <div style='height:100%'>
+            <div ng-view style='height:100%'></div>
+        </div>
+        <script type="text/javascript">
+//Get configuration from environment variables (via heroku or localhost env)
+        var configFromEnv = {};
+        configFromEnv.client_id = '<%= client_id %>';
+        configFromEnv.app_url = '<%= app_url %>';
+
+        </script>
+
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.js" type="text/javascript"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/js/vendor/ui-bootstrap-0.5.0.min.js" type="text/javascript"></script>
+        <script src="/js/vendor/bootstrap-modal.js" type="text/javascript"></script>
+        <script src="/js/vendor/leaflet-src.js" type="text/javascript"></script>
+        <script src="js/vendor/underscore-1.4.4.min.js"></script>
+
+
+        <script src="js/sdk/forcetk.mobilesdk.js"></script>
+        <script src="js/sdk/smartsync.js"></script>
+        <script src="js/sdk/angular-force.js"></script>
+        <script src="js/sdk/forcetk.ui.js"></script>
+
+        <script src="js/init.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
+</html>
